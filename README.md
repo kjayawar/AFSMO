@@ -5,7 +5,7 @@ Original AFSMO source code was downloaded from [PDAS](https://www.pdas.com/afsmo
 ## Installation
 
 ```bash
-pip install numpy matplotlib argparse
+pip install numpy matplotlib argparse scipy
 ```
 AFSMO fortran source code can be compiled in Unix systems easily using gfortran, and using a free Intel Fortran compiler in Windows
 
