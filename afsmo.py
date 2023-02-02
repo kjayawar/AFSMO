@@ -241,13 +241,15 @@ if __name__ == '__main__':
                         help='Use external interpolation instead of AFSMO built-in interpolation', 
                         action='store_true')
 
-    parser.add_argument('--max-iter',    
+    adopts = parser.add_argument_group('Advanced options')
+
+    adopts.add_argument('--max-iter',    
                         metavar='',
                         type=int,  
                         help='MAXIMUM NUMBER OF SMOOTHING ITERATIONS'.title(), 
                         default=80)
 
-    parser.add_argument('--iplot',    
+    adopts.add_argument('--iplot',    
                         metavar='',
                         type=int,  
                         help="""\
@@ -267,7 +269,7 @@ IPLOT - PLOTTING OPTION
 """.title(), 
                         default=10)
 
-    parser.add_argument('--ipunch',    
+    adopts.add_argument('--ipunch',    
                         metavar='',
                         type=int,  
                         help="""\
@@ -285,7 +287,7 @@ IPUNCH - PUNCH OUTPUT OPTION
 """.title(), 
                         default=1)
 
-    parser.add_argument('--iop',    
+    adopts.add_argument('--iop',    
                         metavar='',
                         type=int,  
                         help="""\
@@ -297,7 +299,7 @@ IOP - INPUT DATA OPTION
 """.title(), 
                         default=0)
 
-    parser.add_argument('--icamtk',    
+    adopts.add_argument('--icamtk',    
                         metavar='',
                         type=int,  
                         help="""\
@@ -307,7 +309,7 @@ ICAMTK - THICKNESS AND CAMBER DISTRIBUTION OPTION
 """.title(), 
                         default=1)
 
-    parser.add_argument('--ibad',    
+    adopts.add_argument('--ibad',    
                         metavar='',
                         type=int,  
                         help="""\
@@ -317,7 +319,7 @@ IBAD - BAD COORDINATE CHECK OPTION
 """.title(), 
                         default=1)
 
-    parser.add_argument('--itrn',    
+    adopts.add_argument('--itrn',    
                         metavar='',
                         type=int,  
                         help="""\
