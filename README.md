@@ -32,6 +32,8 @@ options:
   -a, --aspect       Uses real aspect ratio for plotting
   -s, --scale        Scales and de-rotates the airfoil [Normalize]
   -e, --external     Use external interpolation instead of AFSMO built-in interpolation
+
+Advanced options:
   --max-iter         Maximum Number Of Smoothing Iterations
   --iplot            Iplot - Plotting Option
                          0 - No Plots                                  
@@ -71,7 +73,7 @@ options:
   --itrn             Itrn - Input Coordinate Translation And Rotation Option 
                          0 - Do Not Translate And Rotate                  
                          1 - Translate And Rotate So That X-Axis          
-                            Corresponds To The Longest Chordline           
+                            Corresponds To The Longest Chordline
 ```
 
 As shown above, AFSMO could be executed as,
