@@ -161,6 +161,9 @@ def afsmo(dat_file, interpolate, n_inter, plotter, aspect_equal, **kwargs):
     
     try:
         theta, x_new, y_new  = extract_afsmo_smr()
+        theta = theta[::-1]
+        x_new = x_new[::-1]
+        y_new = y_new[::-1]
         if interpolate:
             x_new, y_new = interpolate_new_points(theta, x_new, y_new, n_inter)    
     except:
